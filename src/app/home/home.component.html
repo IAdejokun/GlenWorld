@@ -1,0 +1,7 @@
+<div *ngIf="loader.isLoading; else content">
+    <app-skeleton-home></app-skeleton-home>
+</div>
+
+<ng-template #content>
+    <app-main-home></app-main-home>
+</ng-template>
